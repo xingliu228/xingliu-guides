@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="星流创作（快手版）图文教程：安装启动、账号登录、下载第一条作品、作品监控、评论监控、发布作品、我的内容、自动评论、限制说明与常见问题。">
+<title>星流创作·快手版图文教程</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6.5" fill="#3370ff"/><path d="M12 4.6l1.9 5.5 5.5 1.9-5.5 1.9L12 19.4l-1.9-5.5-5.5-1.9 5.5-1.9z" fill="#fff"/></svg>星流创作<em>图文教程</em></a>
+    <nav class="site-nav" aria-label="站点导航">
+      <a href="../">总览</a>
+      <a href="../douyin/">抖音</a>
+      <a href="../xhs/">小红书</a>
+      <a href="#welcome" aria-current="page">快手</a>
+      <a href="../channels/">视频号</a>
+    </nav>
+  </div>
+</header>
+<div class="layout">
+  <aside>
+    <nav class="toc" aria-label="本页目录">
+      <p>从这里开始</p>
+      <a href="#welcome">欢迎与能力速查</a>
+      <a href="#install">01 · 安装与启动</a>
+      <a href="#accounts">02 · 登录快手账号</a>
+      <a href="#first">03 · 第一个任务</a>
+      <p>功能说明</p>
+      <a href="#download">链接下载</a>
+      <a href="#monitor">作品监控</a>
+      <a href="#comments">评论监控</a>
+      <a href="#publish">发布作品</a>
+      <a href="#my-content">我的内容</a>
+      <a href="#autocomment">自动评论</a>
+      <p>参考</p>
+      <a href="#limits">限制与注意</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </aside>
+  <main id="main">
+    <section id="welcome">
+      <div class="eyebrow">星流创作 / 快手版</div>
+      <h1>从登录和下载开始，<br>逐步用上监控与发布。</h1>
+      <p class="lead">快手版支持作品监控、评论监控、创作者发布、我的内容与自动评论。上手顺序：登录账号 → 下载一条自己的作品 → 按需建立作品与评论监控 → 需要发声时再配置发布与自动评论。</p>
+      <div class="actions"><a href="#install">开始安装</a><a class="ghost" href="#first">已装好？直接做第一个任务</a></div>
+      <h2>能力速查</h2>
+      <div class="table-scroll">
+        <table>
+          <caption>按快手版当前实现整理，以应用内实际入口为准</caption>
+          <thead><tr><th scope="col">能力</th><th scope="col">状态</th><th scope="col">说明</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">链接下载</th><td><span class="tag yes">支持</span></td><td>粘贴作品分享文案，下载自己的作品。</td></tr>
+            <tr><th scope="row">作品监控</th><td><span class="tag yes">支持</span></td><td>持续检查创作者的新内容，可配置下载范围。</td></tr>
+            <tr><th scope="row">关键词批量采集</th><td><span class="tag no">不支持</span></td><td>快手版不提供按关键词的一次性批量采集。</td></tr>
+            <tr><th scope="row">评论监控</th><td><span class="tag yes">支持</span></td><td>针对指定作品或账号近期作品读取评论。</td></tr>
+            <tr><th scope="row">弹幕监控</th><td><span class="tag no">不支持</span></td><td>快手版不支持短视频弹幕监控。</td></tr>
+            <tr><th scope="row">发布</th><td><span class="tag yes">支持</span></td><td>需完成创作者登录；添加素材与文案后提交。</td></tr>
+            <tr><th scope="row">作品转发</th><td><span class="cell-note">以入口为准</span></td><td>不是所有平台都能互相转发，以应用内实际提供的入口为准。</td></tr>
+            <tr><th scope="row">我的内容</th><td><span class="tag yes">支持</span></td><td>作品、关注、粉丝；不含私信。</td></tr>
+            <tr><th scope="row">私信</th><td><span class="tag no">不支持</span></td><td>快手版我的内容不含私信会话。</td></tr>
+            <tr><th scope="row">自动评论</th><td><span class="tag yes">支持</span></td><td>规则默认关闭，先试跑与审核，确认后再启用。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="hint">还需要抖音、小红书或视频号？站内另有对应教程，见顶部导航。</p>
+    </section>
+
+    <section id="install">
+      <div class="eyebrow">01 / SETUP</div>
+      <h2>安装与启动</h2>
+      <div class="note"><p><strong>安装即用：</strong>获取「星流创作」安装包后双击安装，从桌面快捷方式启动。无需手动安装 Python 或其他运行环境；缺少 WebView2 组件时，安装器会自动联网补装。</p></div>
+      <ol>
+        <li>双击「星流创作」安装包，按提示完成安装；出现系统权限弹窗时确认允许。</li>
+        <li>从桌面快捷方式或开始菜单启动「星流创作」，进入启动中心。</li>
+        <li>点击「启动本地服务」。首次启动会自动下载所需浏览器，请保持网络畅通并等待就绪。</li>
+        <li>服务就绪后点击「打开工作台」，在浏览器中进入本机工作台（地址 <code>127.0.0.1:8000</code>，指的是你自己的电脑，不是公共网站）。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>能看到工作概览，并打开「平台账号」页面。第一次列表为空是正常的。</p></div>
+      <h3>日常启动与停止</h3>
+      <p>日常从桌面快捷方式打开启动中心，一键启动本地服务。暂时不用时可收起到系统托盘，任务继续运行；需要完全停止时，在启动中心选择「停止并退出」。仅关闭网页并不会停止后台服务。</p>
+      <h3>应用更新</h3>
+      <p>应用会定期检查新版本；有可用更新时，<strong>右下角会出现更新提示</strong>，按提示下载安装即可。升级前会自动备份配置与数据库，已下载内容与账号资料保留；更新完成后重新启动，检查账号、配置和历史记录是否正常。</p>
+      <details><summary>启动或连接异常时</summary><p>先在启动中心查看运行记录与诊断信息，确认服务状态；再按<a href="#faq">常见问题</a>排查。仍无法解决时，按文末方式导出运行日志联系我们。</p></details>
+    </section>
+
+    <section id="accounts">
+      <div class="eyebrow">02 / ACCOUNT</div>
+      <h2>登录快手账号</h2>
+      <p class="path">入口：选择快手 → 平台账号 → 添加账号</p>
+      <ol>
+        <li>把平台切换为「快手」，打开「平台账号 → 添加账号」。</li>
+        <li>按用途选择「扫码登录」或「创作者登录」：扫码用于读取、下载与监控；发布作品需要创作者登录。</li>
+        <li>在弹出的浏览器窗口中按提示完成扫码与确认，不要提前关闭窗口。</li>
+        <li>回到账号列表检测状态，确认昵称与状态正常。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>账号出现在列表中，状态检测正常，并能在创建任务时被选中。</p></div>
+      <p>登录失效时从账号列表重新登录，不要为了修复登录删除整个数据目录。</p>
+    </section>
+
+    <section id="first">
+      <div class="eyebrow">03 / FIRST RESULT</div>
+      <h2>第一个任务：下载一条自己的作品</h2>
+      <p>先用你自己拥有或获准保存的一条快手作品，验证「本地服务 → 账号 → 任务 → 文件」整条链路。</p>
+      <ol>
+        <li>在快手复制自己一条作品的完整分享文案，不必手动删掉其中的文字。</li>
+        <li>打开「链接下载」，粘贴分享内容并选择刚登录的账号，其余选项先保留默认。</li>
+        <li>提交后等待结果，不要连续点击。</li>
+        <li>等待下载记录完成后，打开实际保存的文件确认可以播放。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>下载记录显示完成，实际文件能正常打开。链路已跑通，后面的功能都建立在这条链路上。</p></div>
+      <p>下一步：想持续发现新作品，看<a href="#monitor">作品监控</a>；想看互动内容，看<a href="#comments">评论监控</a>。下载的详细说明见<a href="#download">链接下载</a>。</p>
+    </section>
+
+    <section id="download">
+      <h2>链接下载：保存已知作品</h2>
+      <p class="path">入口：链接下载</p>
+      <ol>
+        <li>复制作品完整分享文案或链接，粘贴到输入框。</li>
+        <li>选择已登录账号与下载选项，提交后等待结果。</li>
+        <li>在下载记录查看状态与保存路径，成功后打开实际文件核对。</li>
+      </ol>
+      <p>下载有断点续传和失败重试机制；链接失效或登录失效导致的失败，需要先修复原因再重试。默认下载内容位于 <code>data/media/</code> 下，修改过下载目录时以界面配置的实际路径为准。</p>
+    </section>
+
+    <section id="monitor">
+      <h2>作品监控：持续发现新作品</h2>
+      <p class="path">入口：作品监控 → 新建作品监控</p>
+      <ol>
+        <li>新建作品监控，填写创作者目标（完整分享文案或主页链接），选择可用的快手账号。</li>
+        <li>设置检查频率和自动下载范围；第一次先用<strong>一个目标</strong>测试，确认跑通后再增加。</li>
+        <li>在「监控目标」查看执行状态，在「作品记录」查看发现的内容。</li>
+      </ol>
+      <div class="note"><p><strong>为什么新建后看不到旧作品？</strong>默认监控订阅之后的新内容。没有新内容、尚未到检查时间，都会暂时没有记录，不代表监控失效。</p></div>
+      <p><strong>完成标志：</strong>目标出现在列表中；执行后有检查状态，有符合条件的新作品时进入作品记录。不需要继续监控时暂停目标，不要只关网页。</p>
+    </section>
+
+    <section id="comments">
+      <h2>评论监控</h2>
+      <p class="path">入口：评论监控 → 新建评论监控</p>
+      <ol>
+        <li>按表单选择「指定作品」或「账号近期作品」目标类型，填写完整链接。</li>
+        <li>选择可用账号，检查频率保持默认或低频。</li>
+        <li>执行后到「评论记录」查看结果；空结果时依次检查登录状态、目标链接与筛选条件。</li>
+      </ol>
+      <p>评论监控只负责读取和保存评论，不会自动发出回复；自动回复见<a href="#autocomment">自动评论</a>。</p>
+    </section>
+
+    <section id="publish">
+      <h2>发布作品</h2>
+      <p class="path">入口：发布 → 撰写内容；结果在「发布记录」查看</p>
+      <ol>
+        <li>确认创作者登录有效，进入「发布」并选择发布账号。</li>
+        <li>添加素材与文案，检查预览和平台要求（素材类型与格式以表单提示为准）。</li>
+        <li>确认无误后<strong>仅提交一次</strong>，在「发布记录」观察进度。</li>
+        <li>到快手核对作品及审核状态。</li>
+      </ol>
+      <div class="note"><p><strong>遇到「结果待确认」：</strong>先到快手核对是否已经发出，不要直接重复提交。任务提交成功，不代表已通过平台审核或公开可见。</p></div>
+    </section>
+
+    <section id="my-content">
+      <h2>我的内容</h2>
+      <p class="path">入口：我的内容 → 选择账号 → 选择标签</p>
+      <ol>
+        <li>进入「我的内容」，选择自己的快手账号。</li>
+        <li>按页面可见标签同步作品、关注或粉丝。</li>
+        <li>确认目标后再执行账号动作；出现冷却提示时先查看风控状态，等待恢复条件满足。</li>
+      </ol>
+      <div class="note"><p><strong>快手版的「我的内容」不含私信</strong>：支持范围是作品、关注与粉丝，不要按抖音或小红书的私信能力来预期使用。</p></div>
+    </section>
+
+    <section id="autocomment">
+      <h2>自动评论</h2>
+      <p class="path">入口：自动评论 → 新建评论规则；审核在「任务与审核」</p>
+      <ol>
+        <li>添加规则：填写执行账号、评论目标与评论模板；新建后规则<strong>先保持关闭</strong>。</li>
+        <li>试跑并检查生成的文案，完成需要的人工审核。</li>
+        <li>确认正确后再启用，保持低频并核对实际发送结果。</li>
+      </ol>
+      <div class="note"><p>「已启用」不等于「立刻发送」。实际发送受审核与发送间隔约束；出现平台验证或拒绝提示时，先处理提示，不要连续重试。不需要时关闭规则，并检查队列里是否还有待处理任务。</p></div>
+    </section>
+
+    <section id="limits">
+      <div class="eyebrow">NOTICE / 限制与注意</div>
+      <h2>限制与注意</h2>
+      <ul>
+        <li><strong>不支持关键词批量采集和短视频弹幕监控</strong>；持续发现新内容请使用作品监控。</li>
+        <li><strong>「我的内容」支持作品、关注和粉丝</strong>，不应按抖音或小红书的私信能力预期使用。</li>
+        <li><strong>不是所有平台都能互相转发</strong>，以应用内实际提供的入口为准。</li>
+        <li>发布要求创作者登录有效；提交成功不代表通过平台审核或公开可见。</li>
+        <li>自动发送类任务受审核、间隔与风控冷却约束；遇到平台验证时先在当前窗口处理，优先降低任务规模与频率，而不是放开限制。</li>
+        <li>本地任务依赖本地服务运行：关闭服务或电脑休眠后，任务不会继续执行。</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <div class="eyebrow">FAQ / 常见问题</div>
+      <h2>常见问题</h2>
+      <p>浏览器查找快捷键：Windows / Linux 按 <kbd>Ctrl</kbd> + <kbd>F</kbd>，macOS 按 <kbd>⌘</kbd> + <kbd>F</kbd>，搜索错误关键词。</p>
+      <details open><summary>打开工作台提示连接失败</summary><p>确认启动中心仍在运行、本地服务处于「运行中」，首次启动的依赖与浏览器下载已完成。尽量使用启动中心的「打开工作台」按钮进入。<code>127.0.0.1</code> 指本机，不要在另一台电脑上访问这个地址。</p></details>
+      <details><summary>监控或评论结果为空</summary><p>依次检查：账号登录是否有效、目标链接是否完整、筛选条件是否排除了结果。监控默认只看订阅后的新内容，没有新内容或未到检查时间时暂时没有记录，属于正常现象。</p></details>
+      <details><summary>想按关键词批量采集怎么办</summary><p>快手版不支持关键词批量采集。想持续盯一个创作者，使用作品监控；需要批量采集能力时，可参考站内的抖音版或小红书版教程。</p></details>
+      <details><summary>发布失败或提示「结果待确认」</summary><p>先确认创作者登录有效、素材符合表单要求；「结果待确认」时先到快手核对是否已发出，不要立即重发，以免重复发布。</p></details>
+      <details><summary>遇到其他问题</summary><p>打开<strong>设置 → 运行日志</strong>，导出日志文件，连同系统版本、星流创作版本与复现步骤，发送至邮箱 <strong>lzdb228@qq.com</strong>，或添加微信 <strong>15867750328</strong>。发送前注意隐藏 Cookie、Token、手机号与带签名参数的链接。</p></details>
+    </section>
+
+    <footer>本教程随「星流创作」应用更新维护，以当前界面实际入口为准；平台规则与页面变化可能影响功能。使用时尊重内容版权、个人隐私与平台规则。联系：lzdb228@qq.com · 微信 15867750328<a href="#welcome">返回顶部 ↑</a></footer>
+  </main>
+</div>
+</body>
+</html>

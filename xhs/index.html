@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="星流创作（小红书版）图文教程：安装启动、主站与创作者双登录、下载第一条笔记、笔记与关键词监控、批量采集、评论监控、图集视频定时发布、私信与自动评论、限制说明与常见问题。">
+<title>星流创作·小红书版图文教程</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6.5" fill="#3370ff"/><path d="M12 4.6l1.9 5.5 5.5 1.9-5.5 1.9L12 19.4l-1.9-5.5-5.5-1.9 5.5-1.9z" fill="#fff"/></svg>星流创作<em>图文教程</em></a>
+    <nav class="site-nav" aria-label="站点导航">
+      <a href="../">总览</a>
+      <a href="../douyin/">抖音</a>
+      <a href="#welcome" aria-current="page">小红书</a>
+      <a href="../kuaishou/">快手</a>
+      <a href="../channels/">视频号</a>
+    </nav>
+  </div>
+</header>
+<div class="layout">
+  <aside>
+    <nav class="toc" aria-label="本页目录">
+      <p>从这里开始</p>
+      <a href="#welcome">欢迎与能力速查</a>
+      <a href="#install">01 · 安装与启动</a>
+      <a href="#accounts">02 · 登录小红书账号</a>
+      <a href="#first">03 · 第一个任务</a>
+      <p>功能说明</p>
+      <a href="#download">链接下载</a>
+      <a href="#monitor">笔记与关键词监控</a>
+      <a href="#collection">关键词批量采集</a>
+      <a href="#comments">评论监控</a>
+      <a href="#publish">发布与定时</a>
+      <a href="#my-content">我的内容与私信</a>
+      <a href="#autocomment">自动评论与审核</a>
+      <p>参考</p>
+      <a href="#limits">限制与注意</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </aside>
+  <main id="main">
+    <section id="welcome">
+      <div class="eyebrow">星流创作 / 小红书版</div>
+      <h1>先分清两种登录，<br>再跑通第一件事。</h1>
+      <p class="lead">小红书版支持笔记与关键词监控、关键词批量采集、评论监控、图集视频定时发布、我的内容与私信、自动评论。上手的关键只有一件事：主站登录管「读取」，创作者登录管「发布」，两者相互独立。</p>
+      <div class="actions"><a href="#install">开始安装</a><a class="ghost" href="#first">已装好？直接做第一个任务</a></div>
+      <h2>能力速查</h2>
+      <div class="table-scroll">
+        <table>
+          <caption>按小红书版当前实现整理，以应用内实际入口为准</caption>
+          <thead><tr><th scope="col">能力</th><th scope="col">状态</th><th scope="col">说明</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">链接下载</th><td><span class="tag yes">支持</span></td><td>图集与视频，断点续传与失败重试。</td></tr>
+            <tr><th scope="row">笔记监控</th><td><span class="tag yes">支持</span></td><td>创作者笔记与关键词两类目标，持续检查新内容。</td></tr>
+            <tr><th scope="row">关键词批量采集</th><td><span class="tag yes">支持</span></td><td>一次性按词收集笔记与评论，支持 Excel 导出。</td></tr>
+            <tr><th scope="row">评论监控</th><td><span class="tag yes">支持</span></td><td>针对单条笔记或账号近期笔记持续读取评论。</td></tr>
+            <tr><th scope="row">弹幕监控</th><td><span class="tag no">不支持</span></td><td>小红书版不支持短视频弹幕监控。</td></tr>
+            <tr><th scope="row">发布</th><td><span class="tag yes">支持</span></td><td>图集、视频与定时发布；需创作者登录。</td></tr>
+            <tr><th scope="row">作品转发</th><td><span class="cell-note">接收方</span></td><td>抖音已下载且有权使用的作品，可转发到小红书。</td></tr>
+            <tr><th scope="row">我的内容</th><td><span class="tag yes">支持</span></td><td>作品、关注、粉丝与私信会话。</td></tr>
+            <tr><th scope="row">自动评论</th><td><span class="tag yes">支持</span></td><td>默认通过浏览器发布且先人工审核。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>先弄清楚三个词</h2>
+      <dl class="terms">
+        <dt>平台账号</dt><dd>你登录的小红书账号，用来执行任务；主站登录用于读取，创作者登录用于发布。</dd>
+        <dt>监控目标</dt><dd>你想持续查看的创作者或关键词，不等于登录账号本身。</dd>
+        <dt>任务与记录</dt><dd>任务是「准备做什么、正在做什么」；记录是「已经发现或处理的内容」。任务保存成功，不代表已经产生结果。</dd>
+      </dl>
+      <p class="hint">还需要抖音、快手或视频号？站内另有对应教程，见顶部导航。</p>
+    </section>
+
+    <section id="install">
+      <div class="eyebrow">01 / SETUP</div>
+      <h2>安装与启动</h2>
+      <div class="note"><p><strong>安装即用：</strong>获取「星流创作」安装包后双击安装，从桌面快捷方式启动。无需手动安装 Python 或其他运行环境；缺少 WebView2 组件时，安装器会自动联网补装。</p></div>
+      <ol>
+        <li>双击「星流创作」安装包，按提示完成安装；出现系统权限弹窗时确认允许。</li>
+        <li>从桌面快捷方式或开始菜单启动「星流创作」，进入启动中心。</li>
+        <li>点击「启动本地服务」。首次启动会自动下载所需浏览器，请保持网络畅通并等待就绪。</li>
+        <li>服务就绪后点击「打开工作台」，在浏览器中进入本机工作台（地址 <code>127.0.0.1:8000</code>，指的是你自己的电脑，不是公共网站）。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>能看到工作概览，并打开「平台账号」页面。第一次列表为空是正常的。</p></div>
+      <h3>日常启动与停止</h3>
+      <p>日常从桌面快捷方式打开启动中心，一键启动本地服务。暂时不用时可收起到系统托盘，任务继续运行；需要完全停止时，在启动中心选择「停止并退出」。仅关闭网页并不会停止后台服务。</p>
+      <h3>应用更新</h3>
+      <p>应用会定期检查新版本；有可用更新时，<strong>右下角会出现更新提示</strong>，按提示下载安装即可。升级前会自动备份配置与数据库，已下载内容与账号资料保留；更新完成后重新启动，检查账号、配置和历史记录是否正常。</p>
+      <details><summary>启动或连接异常时</summary><p>先在启动中心查看运行记录与诊断信息，确认服务状态；再按<a href="#faq">常见问题</a>排查。仍无法解决时，按文末方式导出运行日志联系我们。</p></details>
+    </section>
+
+    <section id="accounts">
+      <div class="eyebrow">02 / ACCOUNT</div>
+      <h2>登录小红书账号：主站与创作者双登录</h2>
+      <p class="path">入口：平台账号 → 添加账号</p>
+      <ol>
+        <li>选择小红书 → 平台账号 → 添加账号，使用扫码登录。扫码获得<strong>主站读取态</strong>，用来读取笔记、评论与采集。</li>
+        <li>在弹出的浏览器窗口按提示扫码、确认或完成验证。不要提前关闭登录窗口。</li>
+        <li>需要发布时，回到账号列表完成独立的<strong>「创作者登录」</strong>。</li>
+        <li>检查昵称和状态；必要时刷新资料或检测状态。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>账号出现在列表中，状态检测正常，并能在创建任务时被选中。</p></div>
+      <div class="note"><p><strong>两种登录相互独立：</strong>主站登录成功，不等于创作者发布登录完成。「能查看笔记」不代表「已经能发布」。</p></div>
+      <p>建议使用本机稳定版 Chrome，并保留同一账号的 Profile：每个账号有独立浏览器 Profile，与日常个人 Chrome 配置分开，不要让其他 Chrome 进程同时打开它，也不要随意删除。登录失效时从账号列表重新登录，不要为了修复登录删除整个数据目录。</p>
+    </section>
+
+    <section id="first">
+      <div class="eyebrow">03 / FIRST RESULT</div>
+      <h2>第一个任务：下载一条笔记</h2>
+      <p>先用自己拥有或获准保存的一条小红书笔记，验证「本地服务 → 账号 → 任务 → 文件」整条链路。</p>
+      <ol>
+        <li>完成主站登录后，复制这条笔记的完整分享链接或文案，尽量保留有效的 <code>xsec_token</code>。</li>
+        <li>打开「链接下载」，粘贴分享内容；如表单提供账号、画质或保存选项，选择刚登录的账号，其余先保留默认。</li>
+        <li>提交下载，等待页面返回结果，不要连续点击。</li>
+        <li>到下载记录核对结果，确认图片或视频文件可以打开。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>下载记录显示完成，实际文件能正常打开。你已经跑通整条链路。</p></div>
+      <p>默认下载内容位于 <code>data/media/</code> 下；修改过下载目录时，以界面或配置中的实际路径为准。失败时先看<a href="#faq">常见问题</a>排查，不需要重装整个应用。</p>
+      <p>下一步：想持续发现更新，看<a href="#monitor">笔记与关键词监控</a>；想一次性按词收集，看<a href="#collection">关键词批量采集</a>。</p>
+    </section>
+
+    <section id="download">
+      <h2>链接下载：保存已知内容</h2>
+      <p class="path">入口：链接下载</p>
+      <ol>
+        <li>从小红书复制完整分享文案，不必手动删掉文案中的文字。</li>
+        <li>粘贴到输入框；按需选择账号、画质和下载选项，再提交。</li>
+        <li>查看下载历史或错误提示，成功后检查实际保存路径。</li>
+      </ol>
+      <p>小红书支持图集与视频下载。下载有断点续传和失败重试机制，但链接失效或登录失效仍需要先修复原因。高画质取决于平台实际提供的资源；格式处理或音画合并出现问题时，先完成应用内更新再重试，必要时导出运行日志联系我们。</p>
+    </section>
+
+    <section id="monitor">
+      <h2>笔记与关键词监控：持续发现更新</h2>
+      <p class="path">入口：作品监控 → 新建作品监控</p>
+      <p><strong>适用：</strong>小红书支持「创作者笔记」与「关键词」两类监控目标。</p>
+      <ol>
+        <li>复制创作者主页的完整分享链接，或准备好要持续检查的搜索词。</li>
+        <li>选择「创作者笔记」或「关键词」监控类型，粘贴目标，按需使用「识别」并检查结果，再选择使用账号。链接尽量保留有效的 <code>xsec_token</code>。</li>
+        <li>设置检查频率。第一次先用「每 30 分钟」或「每小时」，不要同时添加大量高频目标。</li>
+        <li>选择「自动下载范围」：只想观察结果时选「仅记录，不下载」；确实需要媒体时再选择对应类型。</li>
+        <li>如提供「首次历史回填」，先选最近 5 条或不下载历史；分组、标签、下载目录和高级筛选可以稍后配置。</li>
+        <li>保存后在「监控目标」查看状态，在「作品记录」查看发现的内容。</li>
+      </ol>
+      <div class="note"><p><strong>为什么新建后没有旧笔记？</strong>默认主要监控订阅后的新内容，历史回填与持续监控是两件事；没有新内容、尚未到检查时间、筛选过严，都可能导致暂时没有记录。</p></div>
+      <p><strong>完成标志：</strong>目标出现在列表中；执行后有检查状态，有符合条件的内容时进入作品记录。不需要继续监控时暂停目标，不要只关网页。</p>
+      <p>笔记与评论监控的新建与编辑支持秒级频率：选择「自定义」后输入数值并选择「秒」或「分钟」，范围 1–86400 秒；分钟允许小数但须换算为整秒（例如 1.5 分钟 = 90 秒）。配置是期望间隔，实际执行还受任务耗时、错峰与账号限速影响。</p>
+    </section>
+
+    <section id="collection">
+      <h2>关键词批量采集：一次性收集一批结果</h2>
+      <p class="path">入口：关键词采集 → 新建关键词采集</p>
+      <ol>
+        <li>输入关键词，一次最多 20 个。第一次先填 1 个容易理解的词，例如「摄影教程」。</li>
+        <li>选择可用的主站登录账号，将每词笔记数设为较小值（例如 5）；不需要评论或媒体时关闭对应选项。</li>
+        <li>如需要评论，设置每笔记评论数，并明确是否包含二级评论；数量代表上限，不保证达到。</li>
+        <li>按需设置深度与排序；需要近期结果时选择「最新发布」。</li>
+        <li>提交后查看任务进度和错误信息；结束后检查结果并导出 Excel。</li>
+        <li>需要继续采集时，可对已结束任务编辑配置并保留结果去重续跑，避免重复新建相同任务。</li>
+      </ol>
+      <div class="note"><p><strong>这不是定时监控。</strong>关键词批量采集是一次性批处理，关键词笔记监控才是持续检查，两者不要混用。批量采集需要有效的主站登录态；「页面可见但详情媒体未读取到」可能是访问参数过期或页面结构变化，不等同于账号失效。</p></div>
+    </section>
+
+    <section id="comments">
+      <h2>评论监控</h2>
+      <p class="path">入口：评论监控 → 新建评论监控</p>
+      <ol>
+        <li>选择「单条笔记」或「账号近期笔记」目标类型，填写相应完整链接，保留有效的 <code>xsec_token</code>。</li>
+        <li>选择已登录账号，按需设置检查周期与采集选项；第一次减少目标数量，其他参数先保留默认。</li>
+        <li>保存后在「监控目标」查看状态，执行后到「评论记录」查看结果。</li>
+        <li>看不到数据时，确认笔记及其评论在浏览器里可见、登录有效、筛选条件没有排除结果。</li>
+      </ol>
+      <p>评论监控只读取和保存评论，<strong>不会因为你创建了监控就自动发出回复</strong>；回复规则见<a href="#autocomment">自动评论与审核</a>。小红书版不支持短视频弹幕监控。</p>
+    </section>
+
+    <section id="publish">
+      <h2>图集、视频与定时发布</h2>
+      <p class="path">入口：发布 → 撰写内容；结果在「发布记录」查看</p>
+      <ol>
+        <li>先完成创作者登录，再进入发布 → 撰写内容。</li>
+        <li>添加有权发布的图片或视频，填写标题、正文与话题；需要定时时，按界面设置发布时间。</li>
+        <li>在预览区核对素材、账号和文案，确认无误后<strong>仅提交一次</strong>。</li>
+        <li>在「发布记录」和「任务队列」观察进度，并到小红书核对作品。</li>
+      </ol>
+      <div class="note"><p><strong>遇到「结果待确认」：</strong>先去平台检查是否已经发出，不要直接重复提交，以免重复发布。任务提交成功，不代表已通过平台审核或公开可见。</p></div>
+      <p>定时及排队任务请保持本地服务运行；执行情况以记录和平台结果为准，不要把定时按钮当成云端托管承诺。抖音已下载且有权使用的作品，可通过抖音版的转发入口发到小红书。</p>
+    </section>
+
+    <section id="my-content">
+      <h2>我的内容与私信</h2>
+      <p class="path">入口：我的内容 → 选择账号 → 选择标签</p>
+      <ol>
+        <li>选择自己的账号，再同步对应的作品、关注或粉丝数据。</li>
+        <li>需要处理私信时，先同步并查看会话，确认对象与上下文，再撰写或审核回复。</li>
+        <li>检查草稿再发送；提交结果不确定时，先核对会话再操作。</li>
+      </ol>
+      <h3>私信自动回复</h3>
+      <p>如需配置自动回复，在私信区域设置关键词、排除词、回复模板、冷却时间和消息最大年龄。默认生成<strong>待审核草稿</strong>：先检查命中对象和文案，再决定是否发送。首次启用只建立消息游标，不会处理全部历史积压。</p>
+      <p>后台会低频检查新消息；发送使用账号自己的可见 Chrome 会话与页面输入框，浏览器默认可能最小化，需要查看时点击「打开浏览器收发」。</p>
+    </section>
+
+    <section id="autocomment">
+      <h2>自动评论与审核</h2>
+      <p class="path">入口：自动评论 → 新建评论规则；审核在「任务与审核」</p>
+      <ol>
+        <li>新建规则：选择执行账号与规则目标，按表单填写触发条件和评论模板。新建后规则默认关闭。</li>
+        <li>先小范围试跑，检查模板、命中目标及生成的任务。</li>
+        <li>到「任务与审核」逐条检查内容；不合适的内容不要发送。</li>
+        <li>确认行为符合预期后再手动启用规则，并保持低频；不需要时关闭规则并检查队列。</li>
+      </ol>
+      <p>小红书默认通过浏览器发布且先人工审核；<code>manual</code> 模式只保存草稿。自动评论、私信和账号动作还受活跃时段、共享写入间隔、小时/每日上限及风险冷却约束。</p>
+      <div class="note"><p>「已启用」不等于「立刻发送」。规则、审核、队列和平台提交是不同阶段；排队原因到任务队列中查看。平台验证码或拒绝提示出现时，先处理提示，不要不断重试。</p></div>
+    </section>
+
+    <section id="limits">
+      <div class="eyebrow">NOTICE / 限制与注意</div>
+      <h2>限制与注意</h2>
+      <ul>
+        <li><strong>主站登录成功，不等于创作者发布登录完成</strong>；发布前先确认创作者登录有效。</li>
+        <li><strong>关键词笔记监控是持续检查，关键词批量采集是一次性任务</strong>；按需求选择，不要互相替代。</li>
+        <li><strong>不支持短视频弹幕监控。</strong></li>
+        <li><strong>设备验证时，在当前 Chrome 窗口处理</strong>，不要反复刷新、重新建号或删除登录目录（Profile）。</li>
+        <li>发布提交成功不代表通过平台审核或公开可见；「结果待确认」时先核对平台，不要重复提交。</li>
+        <li>自动发送类任务受审核、活跃时段、共享写入间隔、小时/每日上限与风险冷却约束；保留默认保护设置，优先降低任务规模与频率。</li>
+        <li>本地任务依赖本地服务运行：关闭服务或电脑休眠后，任务不会继续执行；定时任务请保持服务运行。</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <div class="eyebrow">FAQ / 常见问题</div>
+      <h2>常见问题</h2>
+      <p>浏览器查找快捷键：Windows / Linux 按 <kbd>Ctrl</kbd> + <kbd>F</kbd>，macOS 按 <kbd>⌘</kbd> + <kbd>F</kbd>，搜索错误关键词。</p>
+      <details open><summary>小红书出现设备安全验证</summary><p>使用本机稳定版 Chrome，保持原账号 Profile 和网络稳定，在当前浏览器窗口完成平台验证。验证期间自动任务会暂停，不要反复刷新、重新建号或删除登录目录。</p></details>
+      <details><summary>可以看内容，但发布失败</summary><p>主站扫码登录与创作者登录相互独立。先完成创作者登录，再检查素材要求和发布记录。若提示「结果待确认」，先在平台核对，不要立即重发。</p></details>
+      <details><summary>链接解析失败 / 笔记或评论为空</summary><p>确认账号有效、笔记及其评论在浏览器里可见；重新复制完整分享文案并保留有效的 <code>xsec_token</code>。再检查任务执行时间、历史回填、筛选条件及平台本身是否有可见结果。</p></details>
+      <details><summary>任务一直等待，重启后也没有立即执行</summary><p>查看「任务队列」和风控相关状态：审核、活跃时段、限额、共享间隔、代理与风险冷却都可能让任务排队。等待不是卡死的充分证据，重复提交反而可能制造重复任务。</p></details>
+      <details><summary>遇到其他问题</summary><p>打开<strong>设置 → 运行日志</strong>，导出日志文件，连同系统版本、星流创作版本与复现步骤，发送至邮箱 <strong>lzdb228@qq.com</strong>，或添加微信 <strong>15867750328</strong>。发送前注意隐藏 Cookie、Token、手机号、私信内容与带签名参数的链接。</p></details>
+    </section>
+
+    <footer>本教程随「星流创作」应用更新维护，以当前界面实际入口为准；平台规则与页面变化可能影响功能。使用时尊重内容版权、个人隐私与平台规则。联系：lzdb228@qq.com · 微信 15867750328<a href="#welcome">返回顶部 ↑</a></footer>
+  </main>
+</div>
+</body>
+</html>

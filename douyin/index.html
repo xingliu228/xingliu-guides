@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="星流创作（抖音版）图文教程：安装启动、账号登录、下载第一条作品、作品监控、关键词批量采集、评论与弹幕、发布转发、私信与自动评论、限制说明与常见问题。">
+<title>星流创作·抖音版图文教程</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="../"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="6.5" fill="#3370ff"/><path d="M12 4.6l1.9 5.5 5.5 1.9-5.5 1.9L12 19.4l-1.9-5.5-5.5-1.9 5.5-1.9z" fill="#fff"/></svg>星流创作<em>图文教程</em></a>
+    <nav class="site-nav" aria-label="站点导航">
+      <a href="../">总览</a>
+      <a href="#welcome" aria-current="page">抖音</a>
+      <a href="../xhs/">小红书</a>
+      <a href="../kuaishou/">快手</a>
+      <a href="../channels/">视频号</a>
+    </nav>
+  </div>
+</header>
+<div class="layout">
+  <aside>
+    <nav class="toc" aria-label="本页目录">
+      <p>从这里开始</p>
+      <a href="#welcome">欢迎与能力速查</a>
+      <a href="#install">01 · 安装与启动</a>
+      <a href="#accounts">02 · 登录抖音账号</a>
+      <a href="#first">03 · 第一个任务</a>
+      <p>功能说明</p>
+      <a href="#download">链接下载</a>
+      <a href="#monitor">作品监控</a>
+      <a href="#collection">关键词批量采集</a>
+      <a href="#comments">评论与弹幕</a>
+      <a href="#publish">发布与转发</a>
+      <a href="#my-content">我的内容与私信</a>
+      <a href="#autocomment">自动评论</a>
+      <p>参考</p>
+      <a href="#limits">限制与注意</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </aside>
+  <main id="main">
+    <section id="welcome">
+      <div class="eyebrow">星流创作 / 抖音版</div>
+      <h1>先登录并下载一条自己的作品，<br>再把监控、采集与发布用起来。</h1>
+      <p class="lead">抖音版围绕你的抖音账号提供作品监控、关键词批量采集、评论与弹幕监控、发布转发、私信与自动评论能力。建议顺序：登录 → 下载一条自己的作品 → 按需使用监控与采集 → 需要发声时再配置发布与评论。</p>
+      <div class="actions"><a href="#install">开始安装</a><a class="ghost" href="#first">已装好？直接做第一个任务</a></div>
+      <h2>能力速查</h2>
+      <div class="table-scroll">
+        <table>
+          <caption>按抖音版当前实现整理，以应用内实际入口为准</caption>
+          <thead><tr><th scope="col">能力</th><th scope="col">状态</th><th scope="col">说明</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">链接下载</th><td><span class="tag yes">支持</span></td><td>粘贴作品分享文案，下载自己的作品；有断点续传与失败重试。</td></tr>
+            <tr><th scope="row">作品监控</th><td><span class="tag yes">支持</span></td><td>持续检查创作者主页的新内容，可配置自动下载范围。</td></tr>
+            <tr><th scope="row">关键词批量采集</th><td><span class="tag yes">支持</span></td><td>一次性按关键词批量收集作品与评论，可导出 Excel。</td></tr>
+            <tr><th scope="row">评论监控</th><td><span class="tag yes">支持</span></td><td>针对指定作品或账号近期作品，持续读取并保存评论。</td></tr>
+            <tr><th scope="row">弹幕监控</th><td><span class="tag yes">支持</span></td><td>针对短视频弹幕；直播弹幕不在支持范围内。</td></tr>
+            <tr><th scope="row">发布</th><td><span class="tag yes">支持</span></td><td>需完成创作者登录；添加素材与文案后提交。</td></tr>
+            <tr><th scope="row">作品转发</th><td><span class="tag yes">支持</span></td><td>已下载且有权使用的作品，可按支持入口转发到小红书或视频号。</td></tr>
+            <tr><th scope="row">我的内容</th><td><span class="tag yes">支持</span></td><td>同步作品、关注、粉丝与私信会话。</td></tr>
+            <tr><th scope="row">自动评论</th><td><span class="tag yes">支持</span></td><td>规则默认关闭，先试跑与审核，确认后再启用。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="hint">还需要小红书、快手或视频号？站内另有对应教程，见顶部导航。</p>
+    </section>
+
+    <section id="install">
+      <div class="eyebrow">01 / SETUP</div>
+      <h2>安装与启动</h2>
+      <div class="note"><p><strong>安装即用：</strong>获取「星流创作」安装包后双击安装，从桌面快捷方式启动。无需手动安装 Python 或其他运行环境；缺少 WebView2 组件时，安装器会自动联网补装。</p></div>
+      <ol>
+        <li>双击「星流创作」安装包，按提示完成安装；出现系统权限弹窗时确认允许。</li>
+        <li>从桌面快捷方式或开始菜单启动「星流创作」，进入启动中心。</li>
+        <li>点击「启动本地服务」。首次启动会自动下载所需浏览器，请保持网络畅通并等待就绪。</li>
+        <li>服务就绪后点击「打开工作台」，在浏览器中进入本机工作台（地址 <code>127.0.0.1:8000</code>，指的是你自己的电脑，不是公共网站）。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>能看到工作概览，并打开「平台账号」页面。第一次列表为空是正常的。</p></div>
+      <h3>日常启动与停止</h3>
+      <p>日常从桌面快捷方式打开启动中心，一键启动本地服务。暂时不用时可收起到系统托盘，任务继续运行；需要完全停止时，在启动中心选择「停止并退出」。仅关闭网页并不会停止后台服务。</p>
+      <h3>应用更新</h3>
+      <p>应用会定期检查新版本；有可用更新时，<strong>右下角会出现更新提示</strong>，按提示下载安装即可。升级前会自动备份配置与数据库，已下载内容与账号资料保留；更新完成后重新启动，检查账号、配置和历史记录是否正常。</p>
+      <details><summary>启动或连接异常时</summary><p>先在启动中心查看运行记录与诊断信息，确认服务状态；再按<a href="#faq">常见问题</a>排查。仍无法解决时，按文末方式导出运行日志联系我们。</p></details>
+    </section>
+
+    <section id="accounts">
+      <div class="eyebrow">02 / ACCOUNT</div>
+      <h2>登录抖音账号</h2>
+      <p class="path">入口：顶部选择抖音 → 平台账号 → 添加账号</p>
+      <ol>
+        <li>在顶部把平台切换为「抖音」，打开「平台账号 → 添加账号」。</li>
+        <li>按用途选择登录方式：「扫码登录」获得读取能力，用来采集与下载；要发布作品，选择或另行完成「创作者登录」。</li>
+        <li>在弹出的浏览器窗口按提示扫码、确认或完成验证，不要提前关闭登录窗口。</li>
+        <li>回到账号列表检测状态，确认昵称与状态正常；必要时刷新资料或重新检测。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>账号出现在列表中，状态检测正常，并能在创建任务时被选中。</p></div>
+      <div class="note"><p><strong>两种登录各有用途：</strong>扫码解决「读取」，创作者登录解决「发布」。能下载、能采集，不代表已经能发布；发布前先确认创作者登录有效。</p></div>
+      <p>Cookie 登录是进阶选项，新手先用扫码与创作者登录即可。登录失效时从账号列表重新登录，不要为了修复登录删除整个数据目录。</p>
+    </section>
+
+    <section id="first">
+      <div class="eyebrow">03 / FIRST RESULT</div>
+      <h2>第一个任务：下载一条自己的作品</h2>
+      <p>先用你自己拥有或获准保存的一条抖音作品，验证「本地服务 → 账号 → 任务 → 文件」整条链路。</p>
+      <ol>
+        <li>在抖音复制自己一条作品的完整分享文案，不必手动删掉其中的文字。</li>
+        <li>打开「链接下载」，粘贴分享内容，选择刚登录的账号，其余选项先保留默认。</li>
+        <li>提交后等待页面返回结果，不要连续点击。</li>
+        <li>到下载历史核对保存位置，打开电脑上的实际文件确认可以播放。</li>
+      </ol>
+      <div class="success"><p><strong>完成标志：</strong>下载历史显示完成，实际文件能正常打开。链路已跑通，后面的功能都建立在这条链路上。</p></div>
+      <p>下一步：想持续发现新作品，看<a href="#monitor">作品监控</a>；想按关键词一次收集一批，看<a href="#collection">关键词批量采集</a>。下载的详细选项见<a href="#download">链接下载</a>。</p>
+    </section>
+
+    <section id="download">
+      <h2>链接下载：保存已知作品</h2>
+      <p class="path">入口：链接下载</p>
+      <ol>
+        <li>复制作品完整分享文案或链接，粘贴到输入框。</li>
+        <li>按需选择账号与下载选项，提交后等待结果。</li>
+        <li>在下载历史查看状态与保存路径，成功后打开实际文件核对。</li>
+      </ol>
+      <p>下载有断点续传和失败重试机制；链接失效或登录失效导致的失败，需要先修复原因再重试，而不是反复提交。默认下载内容位于 <code>data/media/</code> 下，修改过下载目录时以界面配置的实际路径为准。</p>
+      <p>已下载且有权使用的作品，可按应用内提供的入口转发到小红书或视频号，见<a href="#publish">发布与转发</a>。</p>
+    </section>
+
+    <section id="monitor">
+      <h2>作品监控：持续发现新作品</h2>
+      <p class="path">入口：作品监控 → 新建作品监控</p>
+      <ol>
+        <li>新建作品监控，粘贴创作者主页的完整分享文案，使用「识别」并检查识别结果是否正确。</li>
+        <li>选择执行账号，设置检查频率与自动下载范围；「首次历史回填」先选最近 5 条或不回填。</li>
+        <li>保存后在「监控目标」查看执行状态，符合条件的新内容出现在「作品记录」。</li>
+      </ol>
+      <div class="note"><p><strong>为什么新建后看不到旧作品？</strong>默认监控订阅之后的新内容，历史回填是可选项，两件事分开看待。没有新内容、尚未到检查时间，都会暂时没有记录。</p></div>
+      <p><strong>完成标志：</strong>目标出现在列表中；执行后有检查状态，有符合条件的新作品时进入作品记录。不需要继续监控时，暂停该目标，不要只关网页。</p>
+      <p>第一次建议用「每 30 分钟」或「每小时」这类低频设置，确认跑通后再增加目标或提高频率。</p>
+    </section>
+
+    <section id="collection">
+      <h2>关键词批量采集：一次性收集一批结果</h2>
+      <p class="path">入口：关键词采集 → 新建关键词采集</p>
+      <ol>
+        <li>新建关键词采集，第一次先输入 1 个关键词，「每词作品数」设为 5 左右，便于核对结果。</li>
+        <li>按需设置评论数、是否包含二级评论与媒体下载；不需要的选项保持关闭。</li>
+        <li>任务结束后检查结果与错误信息，确认后导出 Excel。</li>
+        <li>需要更多数据时，对已结束任务编辑配置并保留结果去重续跑，避免重复新建相同任务。</li>
+      </ol>
+      <div class="note"><p><strong>这是一次性任务，不是定时监控。</strong>采集数量是上限，不代表平台全部内容；实际结果受平台排序、登录状态与当前可见内容影响，少于设置数量不一定是故障。想持续盯一个创作者，请用<a href="#monitor">作品监控</a>。</p></div>
+    </section>
+
+    <section id="comments">
+      <h2>评论与弹幕：读取互动内容</h2>
+      <p class="path">入口：评论监控 / 弹幕监控 → 新建</p>
+      <ol>
+        <li>评论监控：选择「指定作品」或「账号近期作品」目标，填写对应链接，选择执行账号后保存。</li>
+        <li>弹幕监控：选择目标视频与来源——自己的视频使用创作中心来源，公开视频使用播放器来源。</li>
+        <li>在「评论记录」「弹幕记录」查看结果；弹幕记录中的时间指视频内的播放位置，不是发布时间。</li>
+      </ol>
+      <div class="note"><p><strong>弹幕监控针对短视频</strong>，直播弹幕不在支持范围内。评论与弹幕监控只负责读取和保存，不会自动发出回复；自动回复见<a href="#autocomment">自动评论</a>。</p></div>
+    </section>
+
+    <section id="publish">
+      <h2>发布与转发</h2>
+      <p class="path">入口：发布 → 撰写内容；结果在「发布记录」查看</p>
+      <ol>
+        <li>确认账号已完成创作者登录且状态正常，进入「发布」选择发布账号。</li>
+        <li>添加素材与文案，在预览区核对内容；确认无误后<strong>仅提交一次</strong>。</li>
+        <li>在「发布记录」查看进度，并到抖音核对作品与审核状态。</li>
+        <li>已下载且有权使用的作品，可按应用内提供的入口转发到小红书或视频号。</li>
+      </ol>
+      <div class="note"><p><strong>遇到「结果待确认」：</strong>先去抖音检查是否已经发出，不要直接重复提交，以免重复发布。任务提交成功，不代表已通过平台审核或公开可见。</p></div>
+    </section>
+
+    <section id="my-content">
+      <h2>我的内容与私信</h2>
+      <p class="path">入口：我的内容 → 选择账号 → 选择标签</p>
+      <ol>
+        <li>进入「我的内容」，选择抖音账号，按需要同步作品、关注、粉丝或私信会话。</li>
+        <li>处理私信时，先同步并查看会话，确认对象与上下文，再撰写回复或执行账号动作。</li>
+        <li>关注任务结果：遇到「冷却」或「结果待确认」时，先核对平台实际状态再决定下一步，不要连续重复操作。</li>
+      </ol>
+      <p>发送与账号动作受间隔与风控约束，出现平台验证提示时在当前浏览器窗口处理，不要不断重试。</p>
+    </section>
+
+    <section id="autocomment">
+      <h2>自动评论</h2>
+      <p class="path">入口：自动评论 → 新建评论规则；审核在「任务与审核」</p>
+      <ol>
+        <li>新建规则：选择执行账号与评论目标，填写评论模板；新建后规则<strong>先保持关闭</strong>。</li>
+        <li>小范围试跑：检查命中的对象与生成的文案，到「任务与审核」处理需要人工审核的任务。</li>
+        <li>确认行为符合预期后再启用规则；实际发送仍受审核、发送间隔与平台风控约束。</li>
+      </ol>
+      <div class="note"><p>「已启用」不等于「立刻发送」。规则、审核、队列与平台提交是不同阶段；排队原因到任务队列中查看。出现平台验证码或拒绝提示时，先处理提示，不要连续重试。不需要时关闭规则，并检查队列里是否还有待处理任务。</p></div>
+    </section>
+
+    <section id="limits">
+      <div class="eyebrow">NOTICE / 限制与注意</div>
+      <h2>限制与注意</h2>
+      <ul>
+        <li><strong>关键词批量采集是一次性任务</strong>，作品监控才是持续检查；不要用采集功能实现盯更新的需求。</li>
+        <li><strong>弹幕监控针对短视频</strong>，不是直播弹幕。</li>
+        <li><strong>采集数量是上限</strong>，不代表平台全部内容；结果受排序、登录状态与可见性影响。</li>
+        <li>发布与转发要求创作者登录有效；提交成功不代表通过平台审核或公开可见。</li>
+        <li>自动发送类任务受审核、间隔与风控冷却约束；遇到平台验证时先在当前窗口处理，保留默认保护设置，优先降低任务规模与频率，而不是把限制调为零。</li>
+        <li>本地任务依赖本地服务运行：关闭服务或电脑休眠后，任务不会继续执行；定时与排队任务请保持服务运行。</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <div class="eyebrow">FAQ / 常见问题</div>
+      <h2>常见问题</h2>
+      <p>浏览器查找快捷键：Windows / Linux 按 <kbd>Ctrl</kbd> + <kbd>F</kbd>，macOS 按 <kbd>⌘</kbd> + <kbd>F</kbd>，搜索错误关键词。</p>
+      <details open><summary>打开工作台提示连接失败</summary><p>确认启动中心仍在运行、本地服务处于「运行中」，首次启动的依赖与浏览器下载已完成。尽量使用启动中心的「打开工作台」按钮进入。<code>127.0.0.1</code> 指本机，不要在另一台电脑上访问这个地址。</p></details>
+      <details><summary>采集结果比设置的数量少</summary><p>数量是上限，不是保证值；受平台排序、登录状态与当前可见内容影响。先核对任务错误信息与账号状态，若无明显错误，少量缺口属于正常现象，可用「保留结果去重续跑」补采。</p></details>
+      <details><summary>弹幕监控没有结果</summary><p>先检查视频与来源是否匹配：自己的视频使用创作中心来源，公开视频使用播放器来源。弹幕监控只针对短视频；直播弹幕不在支持范围内。</p></details>
+      <details><summary>发布提示「结果待确认」或失败</summary><p>先到抖音核对作品是否已发出，确认后再决定下一步，不要立即重复提交。发布依赖创作者登录，先到账号列表确认登录状态与素材要求。</p></details>
+      <details><summary>遇到其他问题</summary><p>打开<strong>设置 → 运行日志</strong>，导出日志文件，连同系统版本、星流创作版本与复现步骤，发送至邮箱 <strong>lzdb228@qq.com</strong>，或添加微信 <strong>15867750328</strong>。发送前注意隐藏 Cookie、Token、手机号与带签名参数的链接。</p></details>
+    </section>
+
+    <footer>本教程随「星流创作」应用更新维护，以当前界面实际入口为准；平台规则与页面变化可能影响功能。使用时尊重内容版权、个人隐私与平台规则。联系：lzdb228@qq.com · 微信 15867750328<a href="#welcome">返回顶部 ↑</a></footer>
+  </main>
+</div>
+</body>
+</html>
